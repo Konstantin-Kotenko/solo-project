@@ -1,0 +1,13 @@
+@mixin font($fw, $fz, $lh) {
+  font-weight: $fw;
+  font-size: $fz;
+  line-height: $lh;
+}
+
+@mixin bg-img($url, $withGrad: true) {
+  @if $withGrad {
+    background-image: linear-gradient(rgba($background-imager, 0.4), rgba($background-imager, 0.4)), url($url);
+  } @else {
+    background-image: url($url);
+  }
+}

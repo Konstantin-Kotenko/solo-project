@@ -1,0 +1,18 @@
+.logo {
+  font-family: Raleway;
+  @include font(700, 24px, 1.16);
+  letter-spacing: 0.03em;
+  color: $primary-color;
+  @media screen and (min-width: 1200px) {
+    @include font(700, 26px, 1.19);
+  }
+}
+
+.logo__web {
+  color: $accent-color;
+}
+
+.logo--secondary {
+  color: $secondary-color;
+  text-align: center;
+}

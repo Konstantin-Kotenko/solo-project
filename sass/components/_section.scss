@@ -1,0 +1,17 @@
+.section {
+  padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
+}
+
+.section__title {
+  @extend %section;
+  line-height: 1.17;
+  @extend %text;
+  margin-bottom: 30px;
+  color: $primary-shade-color;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}

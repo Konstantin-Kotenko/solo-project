@@ -1,0 +1,33 @@
+.action {
+  padding-top: 0px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.action-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.action-list__item {
+  position: relative;
+  margin: 15px;
+}
+
+.action-list__overlay-text {
+  @include font(700, 14px, 1.14);
+  @extend %text;
+  text-transform: uppercase;
+  color: $secondary-color;
+}
+
+.action-list__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 27px 0;
+  background: rgba($primary-background-color, 0.8);
+}
